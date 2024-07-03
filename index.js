@@ -7,7 +7,6 @@
 //npm i nodemon
 
 import express from "express";
-
 const app = express();
 
 //------------------------------------------------------ Basic Routing
@@ -84,7 +83,7 @@ app.get("/array-cb", [cb1, cb2, cb3]); */
 
 // -----------------
 
-const cb1 = (req, res, next) => {
+/* const cb1 = (req, res, next) => {
   console.log("First Callback");
   next();
 };
@@ -104,9 +103,13 @@ app.get(
     console.log("Fourth Callback");
     res.send("crazyness");
   }
-);
+); */
 
 //------------------------------------------------------ Postman and App.route()
+
+
+
+
 //------------------------------------------------------ Advance Router
 //------------------------------------------------------ Route Parameters In Depth
 //------------------------------------------------------ Controllers In Depth
